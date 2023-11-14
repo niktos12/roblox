@@ -6,6 +6,11 @@
     <title>Document</title>
     <link href="try2.css" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header class="container">
@@ -32,12 +37,51 @@
         </div>
         
     </section>
-    <div class="learning container">
-        <h1 class="learning-h1">Учимся Верстать на экзамене прикол</h1>
-        <h3 class="learning-h3">Онлайн-школа проектирования интерфейсов Html scss и java script от Димандоса</h3>
-        <button class="learning-button">Выбрать курс</button>
-        <img src="./img/image1 .png" class="learning-img">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="learning container">
+                    <h1 class="learning-h1">Учимся Верстать на экзамене прикол</h1>
+                    <h3 class="learning-h3">Онлайн-школа проектирования интерфейсов Html scss и java script от Димандоса</h3>
+                    <button class="learning-button">Выбрать курс</button>
+                    <img src="./img/image1 .png" class="learning-img">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="learning container">
+                    <h1 class="learning-h1">Учимся Верстать на экзамене прикол</h1>
+                    <h3 class="learning-h3">Онлайн-школа проектирования интерфейсов Html scss и java script от Димандоса</h3>
+                    <button class="learning-button">Выбрать курс</button>
+                    <img src="./img/image1 .png" class="learning-img">
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="learning container">
+                    <h1 class="learning-h1">Учимся Верстать на экзамене прикол</h1>
+                    <h3 class="learning-h3">Онлайн-школа проектирования интерфейсов Html scss и java script от Димандоса</h3>
+                    <button class="learning-button">Выбрать курс</button>
+                    <img src="./img/image1 .png" class="learning-img">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="learning container">
+                    <h1 class="learning-h1">Учимся Верстать на экзамене прикол</h1>
+                    <h3 class="learning-h3">Онлайн-школа проектирования интерфейсов Html scss и java script от Димандоса</h3>
+                    <button class="learning-button">Выбрать курс</button>
+                    <img src="./img/image1 .png" class="learning-img">
+                </div>
+            </div>
+             
+            
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        
     </div>
+    
+       
     <div class="notes container">
         <h2 class="h2-notes" id="learn">Чему научим и как поможем</h2>
         <p class="p-notes">Наша компания предоставляет возможность получить базовые знания в IT сфере и научиться применять их на практике. Мы поможем вам освоить основы программирования, веб-разработки, баз данных и других важных технологий.</p>
@@ -225,6 +269,21 @@
             </div>
         </div>
     </footer>
-    
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        speed: 1000,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: 'progressbar',
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
 </body>
 </html>
